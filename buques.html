@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href='https://fonts.googleapis.com/css?family=Bangers|Amaranth|Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<title>
+		Puertos Ecuador
+	</title>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="chevrolet, autos, concesionaria">
+	<meta name="description" content="Pagina de venta e informacion de automotores chevrolet">
+	<meta name="author" content="Johao Lopez">
+</head>
+<body>
+	<header>
+		<a href="buques.html" id="logo">
+			<h1>
+				Puerto de Aguas Profundas Posorja
+			</h1>
+			<h2>
+				"Arribo de buques"
+			</h2>
+		</a>
+		<nav id="menu">
+			<ul>
+				<li><a href="buques.html" class="selected">Buques</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div id="wrapper">
+		<section>
+			<h1 id="titulo">SISTEMA DE BUSQUEDA DE BUQUES</h1>
+			<label>Criterio de busqueda: </label>
+			<select id="elemento" onchange="cambioSelect()">
+				<option value="carga">carga</option>
+				<option value="bandera">bandera</option>
+				<option value="nombre">nombre del buque</option>
+			</select>
+			<br><br>
+			<label>Ingrese elemento a buscar de acuerdo a criterio: </label><input type="text" id="text1" onkeyup="copiar()" value="">
+			<br><br>
+			<p class="boton"></p>
+			<h3>Resultado de buques que cumple criterio de busqueda:</h3>
+			<div id="output">
+			</div>
+		</section>
+		<footer>
+				<a href="https://www.facebook.com/danielopzm">
+					<img src="img/facebook.png" class="social-icon" alt="Facebook_Coyote">
+				</a>
+				<a href="https://www.twitter.com/danielopzm">
+					<img src="img/twitter.png" class="social-icon" alt="Twitter_Johao">
+				</a>
+				<p>&copy; 2016 Johao Lopez</p>
+		</footer>
+	</div>
+		<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+		<script src="js/app.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>

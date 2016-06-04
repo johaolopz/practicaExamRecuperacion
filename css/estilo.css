@@ -1,0 +1,127 @@
+/********************
+GENERAL
+********************/
+a {
+	text-decoration: none;
+	color:white;
+}
+#wrapper {
+	max-width:940px;
+	margin:0 auto;
+	padding: 0 10%;
+	background: #96fc3a;
+}
+
+/*******************
+HEADING
+*******************/
+
+#logo{
+	text-align:center;
+	margin:0;
+}
+
+header{
+	float:left;
+	margin: 0 0 30px 0;
+	padding:5px 0 0 0;
+	width: 100%;
+	background: #567c7c;
+	border-color: #599a68;
+}
+
+h1{
+	font-family: 'Bangers', cursive;
+	margin:15px 0; /*margen de arriba y abajo 15px y a los lados sin margen*/
+	font-size: 3em;
+	font-weight: normal;
+	line-height: 0.8em;
+	color: white;
+}
+
+h2 {
+	font-size: 1.5em;
+	margin: -5px 0 0;
+	color: white;
+	font-weight: none;
+}
+
+#titulo
+{
+	color:brown;
+}
+
+img {
+max-width: 100%;
+}
+
+strong
+{
+	font-size: 2em;
+	color:red;
+}
+
+/*******************
+NAVIGATION
+*******************/
+nav {background-color: black;}
+
+nav a {
+font-weight:800;
+padding: 15px 10px;
+}
+
+nav a.selected {
+	color:#567c7c;
+}
+
+nav a:hover{
+	color: orange;
+}
+
+nav ul {
+	list-style: none;
+	margin:0 10px;
+	padding: 0;
+}
+
+nav li {display:inline-block;}
+
+/*******************
+FOOTER
+*******************/
+
+footer{
+	clear:both;
+	font-size: 1.5em;
+	text-align: center;
+	padding-top: 50px;
+	color:gray;
+}
+
+footer a img.social-icon
+{
+	width:30px;
+	height: 30px;
+	margin:0 5px;
+}
+
+
+/****************************
+Menu para mobiles con JQuery
+****************************/
+@media (min-width: 320px) and (max-width: 568px)
+{
+	#menu ul
+	{
+		display: none;
+	}
+}
+
+@media (min-width: 568px)
+{
+	#menu select, #menu button
+	{
+		display:none;
+	}
+}
